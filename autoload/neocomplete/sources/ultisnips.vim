@@ -48,7 +48,7 @@ endfunction"}}}
 function! s:source.hooks.on_post_filter(context) "{{{
   for snippet in a:context.candidates
     let snippet.dup = 1
-    let snippet.menu = '     [US]'
+    let snippet.menu = '[US]'
     "let snippet.menu = neosnippet#util#strwidthpart(
           "\ snippet.menu_template, winwidth(0)/3)
     "if g:neosnippet#enable_preview
